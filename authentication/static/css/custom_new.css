@@ -1,0 +1,304 @@
+@font-face {
+  font-family: Gilroy-Regular;
+  src: url('../assets/fonts/Gilroy-Regular.ttf');
+}
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url('../assets/fonts/Gilroy-Bold.ttf');
+}
+@font-face {
+  font-family: Gilroy-Heavy;
+  src: url('../assets/fonts/Gilroy-Heavy.ttf');
+}
+@font-face {
+  font-family: Gilroy-Light;
+  src: url('../assets/fonts/Gilroy-Light.ttf');
+}
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url('../assets/fonts/Gilroy-Medium.ttf');
+}
+.row {
+  background-color: white;
+}
+input#email {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #26B1FC;
+  margin-top: 30px;
+  font-family: Gilroy-Medium;
+  margin-left: 142px;
+  width: 345.33px;
+}
+.panel-primary {
+     border-color: white;
+}
+input#password {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #26B1FC;
+  margin-top: 35px;
+  font-family: Gilroy-Medium;
+  margin-left: 100px;
+  background-color: white;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: 1px 0px 0px 1.5px #ddd;
+}
+#login-wrapper .brand {
+    text-align: center;
+    padding: 20px 0;
+}
+#login-wrapper #email, #login-wrapper #password {
+  padding-left: 0px;
+}
+/* #forget-password {
+  display: block;
+  margin-top: 5px;
+  /* margin-bottom: 10px; 
+  color: #737373;
+  margin-left: 74px;
+  font-size: 15px;
+  font-family: Gilroy-Medium;
+} */
+/* #signgfl
+{
+  background-color: white;
+  color: black;
+} */
+/* .btn{
+  color: #ffffff;
+background-color: #26B1FC;
+width: 346px;
+height: 29px;
+font-family:"Gilroy-Bold"!important;
+margin-left: 117px;
+} */
+#word{
+  font-size: 14px;
+  font-family: Gilroy-Medium;
+   align-items: center; 
+    font-weight: bold;
+    color: #999; 
+        margin-left: 129px;
+}
+#cbox{
+  display: table-caption;
+  color: #ffffff;
+  background-color: #26B1FC;
+   width: 192px;
+   margin-left: 75%;
+   font-family: Gilroy-Medium;
+}#select_lang
+{
+  display: table-caption;
+  color: #ffffff;
+  background-color: #26B1FC; 
+  width: 190px;
+  margin-left: 75%;
+  font-family: Gilroy-Medium;
+
+} 
+
+#reset_btn1{
+color: white;
+     margin-top: 30px;
+                        
+     margin-bottom: 16px; 
+     margin-left: 142px;
+     font-family: Gilroy-Medium;
+    
+     background-color: #26B1FC;
+     width: 346px;
+     height: 29px;
+}
+#reset_btn2{
+color: white;
+ margin-left: 142px;
+ font-family: Gilroy-Medium;
+ background-color: #26B1FC;
+ width: 346px;
+ height: 29px;
+}
+#submit_btn{
+color: white;
+margin-top: 30px;
+margin-bottom: 16px;
+margin-left: 114px;
+font-family: Gilroy-Medium;
+}
+#reset{
+font-size: 14px;
+font-family: Gilroy-Medium;
+align-items: center; 
+
+ color: #999;  
+ margin-left: 148px;
+}
+#login1{
+font-size: 15px;
+
+align-items: center;   
+ margin-top: -12px;
+ 
+ color: #999;  
+    margin-left: 148px; 
+    font-family: Gilroy-Medium;
+}
+
+}
+#forget-password {
+display: block;
+margin-top: 40px;
+color: #737373;
+margin-left: 400px;
+font-size: 15px;
+font-family: Gilroy-Medium;
+}
+#signgfl {
+  background-color: white;
+  margin-top: 10px;
+  position: fixed;
+  font-family: Gilroy-Medium;
+}
+
+.panel-body {
+   padding: 0px; 
+   height: 500px;
+}
+.card {
+  width: 245px;
+height: 40px;
+background-color: white;
+left: 150px;
+top: 0px;
+position: relative;
+border-radius: 6px;
+box-shadow: 1px 1px 4px 1px #909aa0;
+
+}
+#login_p {
+  background-color: white;
+  left: 487px;
+  top: 683px;
+  font-family: Gilroy-Medium;
+  color: #0983df;
+  position: fixed;
+
+}
+:focus{outline: none;}
+.col-md-6{
+  position: relative;
+  padding-right: 0px;
+  padding-left: 0px;
+} 
+/* necessary to give position: relative to parent. */
+input[type="text"]
+{
+​
+color: #333;
+width: 245px;
+box-sizing: border-box;
+font-family:Gilroy-Medium;
+}
+.effect-1 
+{
+border: 0;
+padding: 4px 0;
+border-bottom: 1px solid#26b1fc;
+}
+.effect-1 ~ .focus-border
+{
+position: absolute;
+bottom: 0; 
+left: 0; 
+width: 0; 
+height: 2px;
+background-color: #2AEB38;
+transition: 0.4s;
+}
+.effect-1:focus ~ .focus-border
+{
+width: 260px;
+transition: 0.4s;
+}
+​#Names{
+width: 224px; 
+margin-left:  85px;
+color: #999;  
+  margin-top: 5px;
+}
+​.btn{
+  color: #FFFFFF;
+  background-color: #26B1FC;
+  width: 346px;
+  height: 29px;
+}
+​#go_back
+{
+  background-color: white;
+    left: 480px;
+    top: 570px;
+    font-family: Gilroy-Medium;
+    color: #0983df;
+    position: fixed;
+
+}
+​
+​
+​
+/* ====================================================== */
+/*              Media Queries Start                       */
+/* ====================================================== */
+@media (min-width: 1200px){
+
+}
+/* ------------------------------------------------ */
+/*              M Q max-width: 1799.98px */
+/* ------------------------------------------------*/
+/* // Large devices (desktops, less than 1800px) */
+@media (max-width: 1799.98px) {    
+   
+
+}
+/* ------------------------------------------------ */
+/*              M Q max-width: 1199.98px */
+/* ------------------------------------------------*/
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+   
+
+}
+/* ------------------------------------------------ */
+/*              M Q max-width: 991.98px */
+/* ------------------------------------------------*/
+/* // Medium devices (tablets, less than 992px) 768 to 991.98 */
+@media (max-width: 991.98px) {    
+}
+/* ------------------------------------------------ */
+/* M Q max-width: 767.98px */
+/* ------------------------------------------------*/
+/* // Small devices (landscape phones, less than 768px) 576 to 767.98*/
+@media (max-width: 768.98px) {
+  .col-md-6
+  {
+    padding-right: 15px;
+    padding-left: 115px;
+  }
+}
+/* ------------------------------------------------ */
+/* M Q max-width: 575.98px */
+/* ------------------------------------------------*/
+/* // Extra small devices (portrait phones, less than 576px) 476 to 575*/
+@media (max-width: 575.98px) {
+   
+}
+/* ------------------------------------------------ */
+/*              M Q max-width: 475.98px             */
+/* ------------------------------------------------*/
+/* body working fine 320 to 475 */
+@media (max-width: 475.98px) {  
+   
+
+

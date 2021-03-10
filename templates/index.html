@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+    <meta charset="utf-8">
+    {% load static %}
+    {% load i18n %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="{% static 'assets/img/favicon.png' %}">
+    <!-- <title>Job Description</title> -->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{% static 'assets/js/plugins/bootstrap/css/bootstrap.min.css' %}">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/simple-line-icons.css' %}">
+    <!-- CSS Animate -->
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <!-- Carousel -->
+    <link rel="stylesheet" href="{% static 'assets/js/plugins/carousel/owl.carousel.css' %}">
+    <!-- Custom styles for this theme -->
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/customx.css' %}">
+    <!-- Feature detection -->
+    <script src="{% static 'assets/js/vendor/modernizr-2.6.2.min.js' %}"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="{% static 'assets/js/vendor/html5shiv.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/respond.min.js' %}"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- NAVBAR
+    ================================================== -->
+    <header class="navbar-wrapper">
+        <div class="navbar navbar-default navbar-static-top home-navbar" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">{% trans "Toggle navigation"  %}</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            <div class="navbar-collapse collapse" style="align-items: center;">
+                <div class="row">
+                  <div class="col-md-2"> 
+                    <svg id="logo_svg" width="80" height="21" viewBox="0 0 80 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.2625 11.1034C16.2583 11.3739 16.3192 11.6409 16.4393 11.878C16.5593 12.1151 16.7343 12.314 16.9469 12.4551C17.4575 12.8132 18.0205 13.0744 18.6118 13.2275C19.2653 13.4109 19.9189 13.6153 20.5725 13.8408C21.2079 14.0535 21.7815 14.4415 22.2373 14.967C22.7068 15.531 22.9527 16.273 22.9218 17.0324C22.9333 17.5348 22.8349 18.033 22.6348 18.4861C22.4347 18.9393 22.1386 19.3345 21.7706 19.6393C20.9159 20.3386 19.8638 20.6936 18.7946 20.6435C17.8117 20.6762 16.8412 20.3979 16.0014 19.8425C15.2707 19.3574 14.7057 18.6269 14.3921 17.7616L15.6692 16.9351C15.8762 17.5783 16.2836 18.1227 16.821 18.4745C17.416 18.8618 18.1003 19.0572 18.7939 19.0376C19.4464 19.0625 20.0928 18.8937 20.6636 18.5495C20.9055 18.3974 21.1039 18.1755 21.2365 17.9083C21.3692 17.6412 21.4309 17.3393 21.4149 17.0363C21.4191 16.7658 21.3582 16.4988 21.2382 16.2617C21.1181 16.0246 20.9431 15.8257 20.7305 15.6846C20.2198 15.3266 19.6569 15.0654 19.0657 14.9122C18.4069 14.7273 17.7533 14.5229 17.1049 14.2989C16.4695 14.0862 15.8959 13.6982 15.4401 13.1727C14.9706 12.6087 14.7247 11.8667 14.7556 11.1073C14.7496 10.6175 14.8464 10.1326 15.0387 9.68945C15.231 9.24632 15.5138 8.85657 15.8655 8.5498C16.6494 7.84778 17.6433 7.4825 18.6587 7.52326C19.5152 7.50285 20.36 7.74111 21.099 8.21148C21.7791 8.64706 22.3203 9.29794 22.65 10.0769L21.3957 10.8779C20.9551 9.70945 20.043 9.12525 18.6594 9.12525C18.0621 9.10767 17.4739 9.28645 16.9718 9.63813C16.7458 9.79352 16.5612 10.0107 16.4367 10.2678C16.3123 10.525 16.2522 10.8131 16.2625 11.1034V11.1034ZM30.7428 20.6412C29.9444 20.6601 29.1508 20.5035 28.4096 20.1807C27.6684 19.8579 26.9951 19.3756 26.4301 18.7628C25.8651 18.1501 25.4202 17.4196 25.1221 16.6152C24.824 15.8109 24.6788 14.9494 24.6954 14.0826C24.6788 13.2158 24.824 12.3543 25.1221 11.55C25.4202 10.7456 25.8651 10.0151 26.4301 9.40237C26.9951 8.78963 27.6684 8.30734 28.4096 7.98453C29.1508 7.66173 29.9444 7.50509 30.7428 7.52403C31.8188 7.50652 32.8781 7.81434 33.8021 8.41308C34.6748 8.96792 35.3659 9.80515 35.7785 10.8076L34.5377 11.58C34.2304 10.8281 33.7112 10.2015 33.0551 9.79029C32.3558 9.34295 31.5565 9.11339 30.745 9.12679C30.1462 9.11325 29.5513 9.23415 28.9975 9.4819C28.4438 9.72966 27.9432 10.0989 27.527 10.5666C26.6866 11.5101 26.2167 12.7712 26.2167 14.0838C26.2167 15.3963 26.6866 16.6575 27.527 17.6009C28.011 18.1449 28.6056 18.5581 29.2632 18.8074C29.9208 19.0567 30.623 19.1352 31.3136 19.0366C32.0042 18.938 32.6639 18.665 33.2398 18.2396C33.8156 17.8141 34.2916 17.248 34.6295 16.5868L35.8938 17.3878C35.4234 18.3837 34.6968 19.2099 33.8021 19.766C32.8739 20.3525 31.8167 20.655 30.7428 20.6412ZM47.9822 18.7657C47.135 19.6866 46.0545 20.313 44.8784 20.5653C43.7023 20.8175 42.4836 20.6841 41.3775 20.1822C40.2714 19.6802 39.3279 18.8323 38.6669 17.7464C38.006 16.6605 37.6576 15.3857 37.666 14.0841C37.6717 12.7882 38.0292 11.5229 38.6938 10.4463C39.3583 9.36982 40.3005 8.52992 41.4025 8.0317C42.5044 7.53347 43.7172 7.39903 44.8891 7.64519C46.0611 7.89135 47.1402 8.50719 47.9914 9.41567C48.5642 10.0209 49.0158 10.7478 49.3182 11.5511C49.6205 12.3543 49.7671 13.2166 49.7487 14.0841C49.7664 14.9544 49.6186 15.8193 49.3147 16.6248C49.0108 17.4302 48.5571 18.1591 47.9822 18.7657ZM40.4941 17.6118C41.3522 18.5284 42.5084 19.0411 43.7122 19.0388C44.916 19.0365 46.0706 18.5194 46.9257 17.5994C47.7656 16.6556 48.2351 15.3946 48.2351 14.0822C48.2351 12.7698 47.7656 11.5088 46.9257 10.565C46.0709 9.64298 44.9148 9.12548 43.7099 9.12548C42.5049 9.12548 41.3489 9.64298 40.4941 10.565C39.654 11.5112 39.1847 12.7742 39.1847 14.0884C39.1847 15.4026 39.654 16.6656 40.4941 17.6118V17.6118ZM59.8002 7.52326H61.3V20.5338H59.8002V18.4019C59.4126 19.1179 58.852 19.7051 58.1791 20.0999C57.5061 20.4947 56.7465 20.6822 55.9825 20.6419C55.3794 20.6763 54.7765 20.5709 54.2139 20.3328C53.6512 20.0947 53.1416 19.7293 52.7191 19.2609C51.889 18.2383 51.4608 16.9036 51.5259 15.5425V7.52326H53.0257V15.5417C52.9716 16.4855 53.2613 17.4146 53.8325 18.1285C54.1329 18.4465 54.4913 18.6926 54.8846 18.8511C55.278 19.0095 55.6975 19.0768 56.1163 19.0484C56.6079 19.0698 57.0983 18.9802 57.5564 18.7853C58.0146 18.5904 58.4305 18.2944 58.7778 17.9161C59.5297 16.9431 59.8973 15.6873 59.8009 14.4217L59.8002 7.52326ZM2.31011 16.783V9.06654H0V7.33402H2.31011V4.43669L3.90875 3.85815V7.33402H7.28462V9.0704H3.90875V16.9761C3.90875 17.4882 4.09614 17.9794 4.42971 18.3415C4.76327 18.7036 5.21567 18.9071 5.6874 18.9071H7.28676V20.6435H5.50811C4.659 20.6435 3.84467 20.2773 3.24426 19.6254C2.64385 18.9736 2.30655 18.0895 2.30655 17.1676L2.31011 16.783ZM66.9867 16.9761C66.9867 17.4882 67.174 17.9794 67.5076 18.3415C67.8412 18.7036 68.2936 18.9071 68.7653 18.9071H70.3632V20.6435H68.5846C67.7355 20.6435 66.9211 20.2773 66.3207 19.6254C65.7203 18.9736 65.383 18.0895 65.383 17.1676V9.06654H63.0772V7.33402H65.3873V4.43669L66.9859 3.85815V7.33402H70.3632V9.0704H66.9859L66.9867 16.9761Z" fill="black"/>
+                        <path d="M9.06152 18.9048H12.6153V20.6412H9.06152V18.9048ZM74.2709 0H79.2462V5.40149C79.2462 6.01606 79.0213 6.60546 78.621 7.04003C78.2208 7.4746 77.6779 7.71873 77.1118 7.71873H72.1366V2.31724C72.1366 1.70267 72.3614 1.11327 72.7617 0.678704C73.162 0.244137 73.7049 0 74.2709 0V0Z" fill="#26B1FC"/>
+                        </svg>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav pull-left col-md-6" style="background-color:#26b1fc;height: 50px;">
+                            <li><a class="nav-link" href="index.html">{% trans "Home"  %}</a>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">{% trans "Product"  %}
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content" style="width: 1.5px;">
+                                      <a href="product-tour.html">{% trans "Product Tour" %}</a>
+                                      <a href="Inside-jd-builder.html">{% trans "Inside JD builder" %}</a>
+                                    </div>
+                                  </div>
+                                <!-- <a class="nav-link" href="product-tour.html">Product Tour</a> -->
+                            </li>
+                            <li><a class="nav-link" href="pricing.html">{% trans "Pricing" %}</a>
+                            </li>
+                            <li> 
+                                <div class="dropdown">
+                                    <button class="dropbtn">{% trans "About Us" %}
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content" style="width: 1.5px;">
+                                      <a href="#">{% trans "Company"  %}</a>
+                                      <a href="#">{% trans "Mission" %}</a>
+                                      <a href="#">{% trans "Contact" %}</a>
+                                      <a href="#">{% trans "Customer Stories"  %}</a>
+                                    </div>
+                                  </div>
+                                <!-- <a class="nav-link" href="about.html">About Us</a> -->
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav col-md-4" style="background-color:#26b1fc;height: 50px;">
+                           <li> <div class="dropdown">
+                            <button class="dropbtn">{% trans "Select language" %}
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                  {% get_current_language as LANGUAGE_CODE %}
+                  {% get_available_languages as LANGUAGES %}
+                  {% get_language_info_list for LANGUAGES as languages %}
+
+                            <div class="dropdown-content" style="margin-left: 14px;min-width: 125px;">
+
+                              {% for language in languages %}
+                                  <a href="/{{ language.code }}/" {% if language.code == LANGUAGE_CODE %} class="selected"{% endif %}>
+                                    {{ language.name_local }}
+                                  </a>
+                              {% endfor %}
+
+
+
+
+
+
+                            </div>
+
+
+                          </div>
+                           </li>
+                            <li><a class="nav-link nav-link-ltr" id="signup_hover" style="color: white;display: block;background: #00000094; padding: 10px 20px!important; text-align: center; margin-top: 5px;"  href="{% url 'authentication:signUp' %}"><span>{% trans "Sign Up" %}</span></a>
+                            </li>
+                            <li><a class=" nav-link nav-link-ltr" id="signin_hover" style="color: white;display: block;background: #00000094; padding: 10px 20px!important; text-align: center; margin-top: 5px; margin-left: 10px;"  href="{% url 'authentication:signIn' %}"><span>{% trans "Sign In" %}</span></a>
+                            </li>
+                        </ul>
+                        
+                           
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Intro section
+    ================================================== -->
+    <section id="Home">
+        <div class="overlay-bg">
+            <div class="container">
+                <div class="hero">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-8 col-md-5 col-lg-5 wow pulse">
+                            <header>
+                                <h1>{% trans "Making your life easier with complete Job Description." %}</h1> <br><br>
+                            </header>
+                            <ul class="features">
+                                <li>{% trans "Create an Amazing Job description in the most smartest and easy way." %}
+                                </li>
+                                <li>{% trans "The Most Powerful tool for creating job description for companies and Startups." %}
+                                </li>
+                                <li>{% trans "700+ Job description template & suggestion that best fit into the position, inspired by what the most successful campanies use." %}
+                                </li>
+                              
+                            </ul>
+                        </div>
+                        <div class="hidden-xs hidden-sm col-md-7 col-lg-7">
+                             <div class="hidden-xs hidden-sm col-md-7 col-lg-7">
+                                <img src="{% static 'assets/img/unnamed.png' %}"   alt="unnamed">
+                             </div>
+                        </div><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </section>
+
+
+    <!-- Features Section
+    ================================================== -->
+    <!-- <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <header>
+                         <h1>START BUILDING YOUR JOB DESCRIPTION</h1> 
+                        <div class="spacer"></div> 
+                         <p class="text-muted">Lorem ipsum dolor sit amet, ut pri munere perfecto sadipscing, nam habeo legere disputationi ea.</p> 
+                    </header>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 text-center wow fadeInUp">
+                    <div class="icon-wrapper">
+                        <p class="icon-circle">
+                            <i class="icon icon-screen-smartphone"></i>
+                        </p>
+                    </div>
+                    <h3>EXISTING TEMPLATE</h3>
+                    <p>The Tempalte which is already created you can edit the Tempalte with your ideas and interest</p>
+                </div>
+                <div class="col-sm-6 text-center wow fadeInUp">
+                    <div class="icon-wrapper">
+                        <p class="icon-circle">
+                            <i class="icon icon-graph"></i>
+                        </p>
+                    </div>
+                    <h3>NEW TEMPLATE</h3>
+                    <p>The Tempalte which Your are going to create with ideas and interest</p>
+                </div>
+             
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Pricing
+    ================================================== 
+    <section id="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <header>
+                        <h1>Pricing</h1>
+                        <div class="spacer"></div>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, id iusto oportere mel. </p>
+                    </header>
+                </div>
+            </div>
+            <div class="row">
+                <div id="pricePlans">
+                    <div class="col-md-3">
+                        <ul id="plan1">
+                            <li class="plan wow zoomIn">
+                                <ul class="planContainer">
+                                    <li class="title">
+                                        <h2>Plan 1</h2>
+                                    </li>
+                                    <li class="price">
+                                        <p>$10/<span>month</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <ul class="options">
+                                            <li>1GB <span>Disk Storage</span>
+                                            </li>
+                                            <li>5GB <span>Bandwidth</span>
+                                            </li>
+                                            <li>5 <span>E-Mail Accounts</span>
+                                            </li>
+                                            <li>5 <span>Databases</span>
+                                            </li>
+                                            <li>3 <span>Subdomains</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="button"><a href="#">Purchase</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        End ul#plans 
+                    </div>
+
+                    <div class="col-md-3">
+                        <ul id="plan2">
+                            <li class="plan wow zoomIn">
+                                <ul class="planContainer">
+                                    <li class="title">
+                                        <h2 class="bestPlanTitle">Plan 2</h2>
+                                    </li>
+                                    <li class="price">
+                                        <p class="bestPlanPrice">$20/month</p>
+                                    </li>
+                                    <li>
+                                        <ul class="options">
+                                            <li>3GB <span>Disk Storage</span>
+                                            </li>
+                                            <li>10GB <span>Bandwidth</span>
+                                            </li>
+                                            <li>10 <span>E-Mail Accounts</span>
+                                            </li>
+                                            <li>10 <span>Databases</span>
+                                            </li>
+                                            <li>6 <span>Subdomains</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="button"><a class="bestPlanButton" href="#">Purchase</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                       End ul#plans
+                    </div>
+
+                    <div class="col-md-3">
+                        <ul id="plan3">
+                            <li class="plan wow zoomIn">
+                                <ul class="planContainer">
+                                    <li class="title">
+                                        <h2>Plan 3</h2>
+                                    </li>
+                                    <li class="price">
+                                        <p>$10/month</p>
+                                    </li>
+                                    <li>
+                                        <ul class="options">
+                                            <li>5GB <span>Disk Storage</span>
+                                            </li>
+                                            <li>20GB <span>Bandwidth</span>
+                                            </li>
+                                            <li>20 <span>E-Mail Accounts</span>
+                                            </li>
+                                            <li>20 <span>Databases</span>
+                                            </li>
+                                            <li>10 <span>Subdomains</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="button"><a href="#">Purchase</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                      End ul#plans 
+                    </div>
+
+                    <div class="col-md-3">
+                        <ul id="plan4">
+                            <li class="plan wow zoomIn">
+                                <ul class="planContainer">
+                                    <li class="title">
+                                        <h2>Plan 4</h2>
+                                    </li>
+                                    <li class="price">
+                                        <p>$10/month</p>
+                                    </li>
+                                    <li>
+                                        <ul class="options">
+                                            <li>10GB <span>Disk Storage</span>
+                                            </li>
+                                            <li>40GB <span>Bandwidth</span>
+                                            </li>
+                                            <li>100 <span>E-Mail Accounts</span>
+                                            </li>
+                                            <li>50 <span>Databases</span>
+                                            </li>
+                                            <li>20 <span>Subdomains</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="button"><a href="#">Purchase</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                         End ul#plans 
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>-->
+
+    <!-- Testimonials Sections
+    ================================================== 
+    <section id="testimonials">
+        <div class="inner">
+            <div class="container">
+                <div class="row"style="background-color: rgba(30, 153, 146, 0.5);"></div>
+                    <div class="col-lg-12 text-center">
+                        <div id="testimonial-wrapper">
+
+                            <div class="item">
+                                <p>"A job description is a document intended to provide job applicants with an outline of the main duties and responsibilities of the role for which they are applying.
+                                    "</p>
+                                <div class="client-info">
+                                    
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p>"Well-written job descriptions serve as communication tools that allow both employees and candidates to clearly understand the expectations of the role, its essential duties, and the required competences, educational credentials, and experience for the role.
+                                    ."</p>
+                                <div class="client-info">
+                                   
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p>"Job Description is the method of putting requirements and content together. </p>
+                                <div class="client-info">
+                                   
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>-->
+
+ 
+
+    <footer style="background-color: #0b354b;">
+       
+            <div class="container">
+              <div class="row" style="background-color:#0b354b"> 
+                <div class="col-md-3 space">
+                  <div class="menu-footer-1-container"><ul id="menu-footer-1" class="navbar"><div class="table"><div class="table-inner"><li id="menu-item-1943" class="title menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-582 current_page_item menu-item-1943">
+                      <a class=" nav-link nav-link-ltr"href="####" aria-current="page">{% trans "Product tour" %}</a></li>
+          <li id="menu-item-2549" class="title menu-item menu-item-type-custom menu-item-object-custom menu-item-2549"><a style="color: white;">About Us</a></li>
+          <li id="menu-item-2550" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2550"><a class=" nav-link nav-link-ltr"href="####">{% trans "Company" %}</a></li>
+          <li id="menu-item-2552" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2552"><a class=" nav-link nav-link-ltr"href="####">{% trans "Mission" %}</a></li>
+          <li id="menu-item-2551" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2551"><a class=" nav-link nav-link-ltr"href="####">{% trans "Contact" %}</a></li>
+          <li id="menu-item-2554" class="menu-item menu-item-type-post_type_archive menu-item-object-customer-stories menu-item-2554"><a class=" nav-link nav-link-ltr"href="####">{% trans "Customer Stories" %}</a></li>
+          </div></div></ul></div>      </div>
+                <div class="col-md-3 space">
+                  <div class="menu-footer-2-container"><ul id="menu-footer-2" class="navbar"><div class="table"><div class="table-inner"><li id="menu-item-1959" class="title menu-item menu-item-type-post_type menu-item-object-page menu-item-1959">
+                      <a class=" nav-link nav-link-ltr"href="####">{% trans "Who we help" %}</a></li>
+          <li id="menu-item-1960" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1960"><a class=" nav-link nav-link-ltr"href="####">{% trans "IT" %}</a></li>
+          <li id="menu-item-1961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1961"><a class=" nav-link nav-link-ltr"href="####">{% trans "Saas" %}</a></li>
+          <li id="menu-item-2561" class="title menu-item menu-item-type-post_type menu-item-object-page menu-item-2561"><a class=" nav-link nav-link-ltr"href="####">{% trans "What is" %}</a></li>
+          <li id="menu-item-2563" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2563"><a class=" nav-link nav-link-ltr"href="####">{% trans "ATS" %}</a></li>
+          <li id="menu-item-2562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2562"><a class=" nav-link nav-link-ltr"href="####">{% trans "AI" %}</a></li>
+          </div></div></ul></div>      </div>
+                <div class="col-md-3 space">
+                  <div class="menu-footer-3-container"><ul id="menu-footer-3" class="navbar"><div class="table"><div class="table-inner"><li id="menu-item-1965" class="title menu-item menu-item-type-custom menu-item-object-custom menu-item-1965"><a style="color: white;">{% trans "Quick Links" %}</a></li>
+          <li id="menu-item-1966" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1966"><a class=" nav-link nav-link-ltr"href="">{% trans "Home page" %}</a></li>
+          <li id="menu-item-1967" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1967"><a class=" nav-link nav-link-ltr"href="">{% trans "Demo" %}</a></li>
+          <li id="menu-item-1971" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1971"><a class=" nav-link nav-link-ltr"href="">{% trans "Sign up" %}</a></li>
+          <li id="menu-item-1974" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1974"><a class=" nav-link nav-link-ltr"href="">{% trans "FAQ" %}</a></li>
+          </div></div></ul></div>      </div>
+                <div class="col-md-3">
+                  <div class="table">
+                    <div class="table-inner">
+                    <div class="widget_text widget-content"><div class="textwidget custom-html-widget">
+                        <img  src="{% static 'assets/img/white-logo.png' %}" class='lazyload'>
+                             
+          <ul class="social-links">
+                  <li> <a href="" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square"></i></a> </li>
+                  <li> <a href="" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook-square"></i></a> </li>
+                  <li> <a href="" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter-square"></i></a> </li>
+                </ul>
+                <p>&copy; 2020 t_scout. All rights reserved</p>
+          <p>
+              <a href="####">Impressum</a><a href="{% static 'privacy-policy.html' %}">{% trans "Privacy Policy" %}</a>
+          </p></div></div>                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </footer>
+
+
+    <!--Global JS-->
+    <script src="{% static 'assets/js/vendor/jquery-1.11.1.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/nav/jquery.nav.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/sticky/jquery.sticky.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/scrollTo/jquery.scrollTo.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/wow/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/parallax/jquery.parallax-1.1.3.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/carousel/owl.carousel.js' %}"></script>
+    <script src="{% static 'assets/js/src/app.js' %}"></script>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+
+</body>
+
+</html>

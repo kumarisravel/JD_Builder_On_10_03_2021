@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-08 11:53+0530\n"
+"PO-Revision-Date: 2021-03-08 12:26+0530\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.2\n"
+
+#: .\jd_builder\settings.py:102 .\templates\index.html:99
+msgid "English"
+msgstr "Englisch"
+
+#: .\jd_builder\settings.py:103
+msgid "germany"
+msgstr "Deutschland"
+
+#: .\templates\index.html:46
+msgid "Toggle navigation"
+msgstr "Navigation umschalten"
+
+#: .\templates\index.html:62
+msgid "Home"
+msgstr "Zuhause"
+
+#: .\templates\index.html:66
+msgid "Product"
+msgstr "Produkt"
+
+#: .\templates\index.html:70
+msgid "Product Tour"
+msgstr "Produkttour"
+
+#: .\templates\index.html:71
+msgid "Inside JD builder"
+msgstr "In JD Builder"
+
+#: .\templates\index.html:76
+msgid "Pricing"
+msgstr "Preisgestaltung"
+
+#: .\templates\index.html:80
+msgid "About Us"
+msgstr "Über uns"
+
+#: .\templates\index.html:84 .\templates\index.html.py:389
+msgid "Company"
+msgstr "Unternehmen"
+
+#: .\templates\index.html:85 .\templates\index.html.py:390
+msgid "Mission"
+msgstr "Mission"
+
+#: .\templates\index.html:86 .\templates\index.html.py:391
+msgid "Contact"
+msgstr "Kontakt"
+
+#: .\templates\index.html:87 .\templates\index.html.py:392
+msgid "Customer Stories"
+msgstr "Kundengeschichten"
+
+#: .\templates\index.html:95
+msgid "Select language"
+msgstr "Sprache auswählen"
+
+#: .\templates\index.html:100
+msgid "Germany"
+msgstr "Deutschland"
+
+#: .\templates\index.html:104
+msgid "Sign Up"
+msgstr "Anmeldung"
+
+#: .\templates\index.html:106
+msgid "Sign In"
+msgstr "Einloggen"
+
+#: .\templates\index.html:128
+msgid "Making your life easier with complete Job Description."
+msgstr ""
+"Erleichtern Sie sich das Leben mit der vollständigen Stellenbeschreibung."
+
+#: .\templates\index.html:131
+msgid "Create an Amazing Job description in the most smartest and easy way."
+msgstr ""
+"Erstellen Sie auf die intelligenteste und einfachste Weise eine "
+"erstaunliche Stellenbeschreibung."
+
+#: .\templates\index.html:133
+msgid ""
+"The Most Powerful tool for creating job description for companies and "
+"Startups."
+msgstr ""
+"Das leistungsstärkste Tool zum Erstellen von Stellenbeschreibungen für "
+"Unternehmen und Startups."
+
+#: .\templates\index.html:135
+msgid ""
+"700+ Job description template & suggestion that best fit into the position, "
+"inspired by what the most successful campanies use."
+msgstr ""
+"700+ Jobbeschreibungsvorlage und Vorschlag, die am besten in die Position "
+"passen, inspiriert von dem, was die erfolgreichsten Campanies verwenden."
+
+#: .\templates\index.html:387
+msgid "Product tour"
+msgstr "Produkttour"
+
+#: .\templates\index.html:396
+msgid "Who we help"
+msgstr "Wem wir helfen"
+
+#: .\templates\index.html:397
+msgid "IT"
+msgstr "ES"
+
+#: .\templates\index.html:398
+msgid "Saas"
+msgstr "Saas"
+
+#: .\templates\index.html:399
+msgid "What is"
+msgstr "Was ist"
+
+#: .\templates\index.html:400
+msgid "ATS"
+msgstr "ATS"
+
+#: .\templates\index.html:401
+msgid "AI"
+msgstr "AI"
+
+#: .\templates\index.html:404
+msgid "Quick Links"
+msgstr "Quick Links"
+
+#: .\templates\index.html:405
+msgid "Home page"
+msgstr "Startseite"
+
+#: .\templates\index.html:406
+msgid "Demo"
+msgstr "Demo"
+
+#: .\templates\index.html:407
+msgid "Sign up"
+msgstr "Anmelden"
+
+#: .\templates\index.html:408
+msgid "FAQ"
+msgstr "FAQ"
+
+#: .\templates\index.html:423
+msgid "Privacy Policy"
+msgstr "Datenschutz-Bestimmungen"
