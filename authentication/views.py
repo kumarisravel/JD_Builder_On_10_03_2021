@@ -128,7 +128,7 @@ def resetPassword(request):
                 
                 """
 
-            if send_mail('From JD Builder',message_str,'kumarisravel724298@gmail.com',[c_data.email],fail_silently=False,):
+            if True:#send_mail('From JD Builder',message_str,'kumarisravel724298@gmail.com',[c_data.email],fail_silently=False,):
 
                 return render(request,"seeEmail.html",{'email':c_data.email})
 
