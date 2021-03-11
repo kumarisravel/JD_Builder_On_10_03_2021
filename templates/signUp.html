@@ -148,6 +148,12 @@
             line-height:1.2;
         }
 
+        .messages{
+        border:1px solid red;
+        padding:10px;
+        list-style-type:none;
+        color:red;
+        }
 
         @media screen and (min-width:480px){
                         .t_scout_logo{
@@ -280,6 +286,14 @@
                                     <img src="{% static 'assets\img\tscout_logo.png' %}" alt="" class="t_scout_logo" />
                                     <p>Sign Up</p>
 
+                                {% if messages %}
+                                  <ul class="messages">
+                                    {% for message in messages %}
+                                      <li>{{ message }}</li>
+                                    {% endfor %}
+                                  </ul>
+                                {% endif %}
+
                                     <div class="input_container">
                                         <label for="" class="label_z">Email Address</label>
                                         <input type="email" name="email" placeholder="Enter Email Address" ng-model="email" required autocomplete="off"/>
@@ -327,7 +341,7 @@
                                     <br>
 
                                     <div class="ways_to_sign_ups">
-                                        <p class="ways"><img src="{% static 'assets/img/google.png' %}" class="sign_up_ways" alt=""/>Continue with Google</p>
+                                        <p class="ways"><a href="{% url 'social:begin' 'google-oauth2' %}"><img src="{% static 'assets/img/google.png' %}" class="sign_up_ways" alt=""/>Continue with Google</a></p>
                                     </div>
 
                                     <div class="ways_to_sign_ups">
@@ -335,7 +349,7 @@
                                     </div>
 
                                     <div class="ways_to_sign_ups">
-                                        <p class="ways"><img src="{% static 'assets/img/linkedin.png' %}" class="sign_up_ways" alt=""/>Continue with LinkedIn</p>
+                                        <p class="ways"><a href="{% url 'social:begin' 'linkedin-oauth2' %}"> <img src="{% static 'assets/img/linkedin.png' %}" class="sign_up_ways" alt=""/>Continue with LinkedIn</p></a>
                                     </div>
                     </div>
                 </form>

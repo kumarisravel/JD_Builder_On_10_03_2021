@@ -29,6 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGIN_REDIRECT_URL = '/dashboard/'
 
 # Application definition
 
@@ -41,7 +42,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'social_django',
     'jd_builder',
-    'authentication'
+    'authentication',
+
 )
 
 MIDDLEWARE_CLASSES = (
@@ -82,9 +84,21 @@ WSGI_APPLICATION = 'jd_builder.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+
+        'NAME': 'jd_builder_now',
+
+        'USER': 'postgres',
+
+        'PASSWORD': 'kumar',
+
+        'HOST': 'localhost',
+
+        'PORT': '5432',
+
+}
+
     }
 
 
@@ -119,9 +133,10 @@ LOCALE_PATHS = (
 
 
 AUTHENTICATION_BACKENDS = [
-    'social_core.backends.linkedin.LinkedinOAuth2',
-    'social_core.backends.instagram.InstagramOAuth2',
     'social_core.backends.facebook.FacebookOAuth2',
+    'social_core.backends.google.GoogleOAuth2',
+    'social_core.backends.linkedin.LinkedinOAuth2',
+
     'django.contrib.auth.backends.ModelBackend'
 ]
 
@@ -138,6 +153,11 @@ SOCIAL_AUTH_FACEBOOK_EXTRA_DATA = [                 # add this
     ('link', 'profile_url')
 ]
 
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '803961234745-15bvv1llcj2umhat1us3b8eunl7bj8s2.apps.googleusercontent.com' # Google Consumer Key
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'c4BI2Khdn3oYdJ_FxjVTvknc' # Google Consumer Secret
+
+SOCIAL_AUTH_LINKEDIN_OAUTH2_KEY = '86x4at68l1c1lw'
+SOCIAL_AUTH_LINKEDIN_OAUTH2_SECRET = '9q0foL8CXbB32rdi'
 
 #For email
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

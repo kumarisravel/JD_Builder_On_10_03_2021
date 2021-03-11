@@ -22,6 +22,6 @@ from django.conf.urls.i18n import i18n_patterns
 urlpatterns = i18n_patterns(
     url('admin/', include(admin.site.urls)),
     url('social-auth/', include('social_django.urls', namespace='social')),
-url(r'^', include('authentication.urls', namespace="authentication"))
+    url(r'^', include('authentication.urls', namespace="authentication"))
 
 )
