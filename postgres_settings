@@ -1,0 +1,15 @@
+    'default': {
+
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+
+        'NAME': 'jd_builder_now',
+
+        'USER': 'postgres',
+
+        'PASSWORD': 'kumar',
+
+        'HOST': 'localhost',
+
+        'PORT': '5432',
+
+}
