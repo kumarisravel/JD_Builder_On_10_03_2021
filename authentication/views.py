@@ -82,7 +82,7 @@ def signUp(request):
 
             if not is_Email:
 
-                if isSendConfirmationEmail(request.POST.__getitem__('email')):
+                if True:#isSendConfirmationEmail(request.POST.__getitem__('email')):
 
                     client = Clients(ClientId=str(random.randint(1000,9999)),ClientName=request.POST.__getitem__('name'), Email=request.POST.__getitem__('email'), Password=request.POST.__getitem__('passwordConfirmed'))
                     client.save()
